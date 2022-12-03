@@ -1,13 +1,15 @@
-import java.util.ArrayList;
-
 public class Student {
     String name;
     int batchNo;
-    int[] GPA = new int[8];
+    double CGPA;
 
-    Student(String name, int batchNo, int[] GPA){
+    Student(String name, int batchNo, String gpas){
         this.name = name;
         this.batchNo = batchNo;
-        this.GPA = GPA;
+        String [] temp = gpas.split(" ");
+        double total = 0;
+        for (int i = 0; i < temp.length; i++)
+            total += Double.parseDouble(temp[i]);
+        CGPA = total/temp.length;
     }
 }
