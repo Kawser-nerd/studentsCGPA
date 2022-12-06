@@ -1,3 +1,11 @@
+/*
+* Author: Kawser Wazed Nafi
+*
+* This is the driver/main class. This class is going to control all the other classes in this
+* program; i.e. Student class, StudentAccess class.
+*
+* This program is going to access the member of StudentAccess class member readFile and sorted Array.
+*  */
 import java.io.IOException;
 import java.util.ArrayList;
 
